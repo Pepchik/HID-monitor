@@ -293,7 +293,9 @@ class App:
         поэтому мышь реального пользователя по нему не попадает. Поверх кладётся
         тонкая панель-желоб (выше всех окон), которая программно двигает саш.
         Возвращает (желоб, функция-перекладка)."""
-        arrow = "sb_h_double_arrow" if orient == tk.VERTICAL else "sb_v_double_arrow"
+        # вертикальный paned: граница горизонтальная, тянем вверх-вниз (↕);
+        # горизонтальный paned: граница вертикальная, тянем влево-вправо (↔)
+        arrow = "sb_v_double_arrow" if orient == tk.VERTICAL else "sb_h_double_arrow"
         g = tk.Frame(self.root, bg=SASHBG, cursor=arrow,
                      highlightthickness=0, bd=0)
         state = {}
