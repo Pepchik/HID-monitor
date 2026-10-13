@@ -6,14 +6,10 @@ A tool that lists HID devices, listens to a selected one and decodes its packets
 
 ## Быстрый старт / Quick start
 
-**Установка (рекомендуется):** скачайте установщик
+**Установка:** скачайте установщик
 [`HIDMonitor-Setup-1.0.0.exe`](https://github.com/Pepchik/HID-monitor/releases/download/v1.0.0/HIDMonitor-Setup-1.0.0.exe)
 со [страницы релизов](https://github.com/Pepchik/HID-monitor/releases/latest) и запустите —
-мастер установит приложение и создаст ярлыки.
-
-**Без установки (portable):** откройте папку [`dist/HIDMonitor`](dist/HIDMonitor) и запустите `HIDMonitor.exe`
-(или скачайте zip в релизе). Папка `dist/HIDMonitor/_internal` с библиотеками должна лежать рядом с exe —
-переносите всю папку целиком. Python для запуска не нужен.
+мастер установит приложение и создаст ярлыки. Удаление — стандартно через «Программы и компоненты».
 
 **Запуск из исходников:**
 
